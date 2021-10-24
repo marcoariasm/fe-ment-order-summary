@@ -1,0 +1,171 @@
+.card {
+  width: 450px;
+  max-height: 697px;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.card__header {
+  width: 100%;
+  height: 220px;
+  background-image: url('../assets/images/illustration-hero.svg');
+  background-size: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+span {
+  display: inline-block;
+  text-align: center;
+}
+
+a.card__cancel,
+a.card__button {
+  text-decoration: none;
+  color: black;
+}
+
+.card__body {
+  display: flex;
+  flex-direction: column;
+  height: 477px;
+  width: 100%;
+  padding: 45px 48px 48px;
+}
+
+.card__title {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+}
+
+.card__description {
+  height: 78px;
+  text-align: center;
+  margin-top: 17px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #717fa6;
+}
+
+.card__product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 98px;
+  background-color: #f7f9ff;
+  border-radius: 11px;
+}
+
+.icon {
+  padding: 25px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  width: 161px;
+}
+
+.item__name {
+  text-align: left;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 21px;
+  color: #1f2e55;
+}
+
+.item__price {
+  text-align: left;
+  font-weight: 500px;
+  font-size: 16px;
+  line-height: 21px;
+  color: #717fa6;
+}
+
+.link:hover {
+  text-decoration: none;
+}
+
+.card__button {
+  width: 100%;
+  margin: 32px 0;
+  color: white;
+  background-color: #382ae1;
+  border-radius: 11px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__button:hover {
+  background-color: #766cf1;
+}
+
+a.card__button {
+  color: white;
+  text-align: center;
+  font-weight: 900;
+  font-size: 15px;
+}
+
+a.card__cancel {
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 20px;
+  color: #717fa6;
+  text-align: center;
+}
+
+a.card__cancel:hover {
+  color: #1f2e55;
+}
+
+@media only screen and (max-width: 754px) {
+  .card {
+    width: 327px;
+    height: 567px;
+  }
+
+  .card__body {
+    padding: 24px;
+  }
+
+  .card__header {
+    height: 160px;
+  }
+
+  .card__title {
+    font-size: 22px;
+  }
+
+  .card__description {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .card__product {
+    font-size: 14px;
+    height: 81px;
+  }
+
+  .item {
+    width: 110px;
+  }
+
+  .item__name,
+  .item__price{
+      font-size: 14px;
+  }
+
+  .card__button,
+  .card__cancel {
+    font-size: 15px;
+  }
+}
